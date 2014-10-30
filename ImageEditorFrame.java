@@ -5,15 +5,19 @@ import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
 
+
 public class ImageEditorFrame extends JFrame{
+
+ImageEditorPanel panel = new ImageEditorPanel();
+
+
 	public ImageEditorFrame(){
 		createMenuBar();
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setSize(400, 300);
 		setVisible(true);
 		setTitle("Hardcore Titel");
-panel = new ImageEditorPanel();
-add(panel);		
+		add(panel);
 	}
 	
 
